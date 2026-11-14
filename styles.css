@@ -296,7 +296,7 @@ html.js .trust-card.is-in .trust-item:nth-child(5){transition-delay:.34s}
 
 /* volle Breite, hauchduenne Goldlinie zwischen den Karten */
 /* Leistungskarten auf der Fluchtlinie der uebrigen Sections, mit Radius */
-.svc-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;padding:1px;background:rgba(199,162,78,.24);width:calc(min(100%, var(--maxw)) - 2 * var(--pad));margin-inline:auto;border-radius:var(--r-lg);overflow:hidden}
+.svc-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;padding:1px;background:rgba(199,162,78,.24);width:calc(min(100%, var(--maxw)) - 2 * var(--pad));margin-inline:auto;border-radius:var(--r-lg);overflow:hidden}
 .svc-card{position:relative;display:block;isolation:isolate;background:var(--ink-2);color:var(--on-dark);
   aspect-ratio:3/4;overflow:hidden;
   transition:box-shadow .5s var(--ease),transform .5s var(--ease)}
@@ -1008,3 +1008,28 @@ html.js .reveal.in{opacity:1;transform:none}
 .legal-sec strong{color:var(--on-cream)}
 .legal-foot{margin-top:3rem;padding-top:1.4rem;border-top:1px solid var(--cream-line);font-family:var(--font-t);font-size:.86rem;color:var(--on-cream-mut)}
 .legal-foot a{color:var(--gold-ink);text-decoration:underline;text-underline-offset:2px}
+
+/* === Leistungen-Dropdown (Desktop-Nav) === */
+.nav-dd{position:relative;display:inline-flex;align-items:center}
+.nav-dd-top{display:inline-flex;align-items:center;gap:.36em}
+.nav-dd-caret{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;opacity:.9;transition:transform .3s var(--ease)}
+.nav-dd:hover .nav-dd-caret,.nav-dd:focus-within .nav-dd-caret{transform:rotate(180deg)}
+.nav-dd::after{content:"";position:absolute;top:100%;left:-6px;right:-6px;height:16px}
+.nav-dd-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%) translateY(8px);min-width:252px;padding:.5rem;background:rgba(20,16,11,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(199,162,78,.28);border-radius:var(--r-lg);box-shadow:0 26px 60px -24px rgba(0,0,0,.72);display:flex;flex-direction:column;gap:2px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .28s var(--ease),transform .28s var(--ease);z-index:120}
+.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}
+.nav-dd-menu a{display:block;padding:.62rem .9rem;font-family:var(--font-t);font-size:.9rem;font-weight:500;letter-spacing:.01em;text-transform:none;color:var(--on-dark);opacity:.85;border-radius:10px;white-space:nowrap;transition:background .25s,color .25s,opacity .25s}
+.nav-dd-menu a::after{display:none}
+.nav-dd-menu a:hover{background:rgba(199,162,78,.14);color:var(--gold-2);opacity:1}
+
+/* Mobile-Menue: Leistungs-Unterpunkte */
+.mobile-menu a.mm-sub{font-size:1.12rem;letter-spacing:.02em;text-transform:none;opacity:.78;padding:.4rem 0 .4rem 1.1rem;border-bottom:1px solid rgba(255,255,255,.05)}
+.mobile-menu a.mm-sub:last-of-type{border-bottom:1px solid rgba(255,255,255,.08)}
+
+/* === Standorte im Kontaktblock === */
+.booking-locations{margin-top:1.7rem;padding-top:1.5rem;border-top:1px solid rgba(199,162,78,.2)}
+.booking-locations .bl-title{display:block;font-family:var(--font-d);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-2);margin-bottom:.95rem}
+.booking-locations ul{list-style:none;margin:0;padding:0;display:grid;gap:.75rem}
+.booking-locations li{display:flex;flex-direction:column;gap:1px}
+.booking-locations li strong{font-family:var(--font-d);font-weight:500;font-size:1.02rem;color:var(--on-dark);letter-spacing:.01em}
+.booking-locations li span{font-size:.9rem;color:var(--on-dark-mut)}
+@media(min-width:520px){.booking-locations ul{grid-template-columns:repeat(3,1fr);gap:1.1rem}}
