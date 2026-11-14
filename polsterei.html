@@ -20,7 +20,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 24h24l-2 4H6z' fill='%23C7A24E'/%3E%3Cpath d='M3 8l6 6 7-9 7 9 6-6-3 14H6z' fill='none' stroke='%23C7A24E' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="styles.css?v=181">
+<link rel="stylesheet" href="styles.css?v=182">
 <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
@@ -116,12 +116,17 @@
     </a>
 
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="index.html#leistungen">Leistungen</a>
+      <div class="nav-dd">
+        <a href="index.html#leistungen" class="nav-dd-top" aria-haspopup="true">Leistungen<svg class="nav-dd-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav-dd-menu" role="menu">
+          <a href="polsterei.html" role="menuitem">Polsterei</a>
+          <a href="designer-moebel.html" role="menuitem">Designermöbel</a>
+          <a href="orientteppiche.html" role="menuitem">Orientteppiche</a>
+          <a href="teppichreinigung-und-teppichreparatur.html" role="menuitem">Teppichreinigung &amp; Reparatur</a>
+        </div>
+      </div>
       <a href="index.html#vergleich">Vorher&nbsp;&amp;&nbsp;Nachher</a>
       <a href="index.html#geschichte">Über uns</a>
-      <a href="index.html#rezensionen">Rezensionen</a>
-      <a href="index.html#ratgeber">Ratgeber</a>
-      <a href="index.html#atelier">Atelier</a>
       <a href="index.html#kontakt">Kontakt</a>
     </nav>
 
@@ -141,11 +146,12 @@
 <div class="mobile-menu" id="mobile-menu" hidden>
   <nav aria-label="Mobile Navigation">
     <a href="index.html#leistungen">Leistungen</a>
+    <a class="mm-sub" href="polsterei.html">Polsterei</a>
+    <a class="mm-sub" href="designer-moebel.html">Designermöbel</a>
+    <a class="mm-sub" href="orientteppiche.html">Orientteppiche</a>
+    <a class="mm-sub" href="teppichreinigung-und-teppichreparatur.html">Teppichreinigung &amp; Reparatur</a>
     <a href="index.html#vergleich">Vorher &amp; Nachher</a>
     <a href="index.html#geschichte">Über uns</a>
-    <a href="index.html#rezensionen">Rezensionen</a>
-    <a href="index.html#ratgeber">Ratgeber</a>
-    <a href="index.html#atelier">Atelier · Teppichverkauf</a>
     <a href="index.html#kontakt">Kontakt</a>
     <a class="btn btn-gold" href="index.html#termin">Termin vereinbaren</a>
     <a class="mobile-call" href="tel:+41443821769">Oder anrufen: +41&nbsp;44&nbsp;382&nbsp;17&nbsp;69</a>
@@ -421,6 +427,6 @@
   </div>
 </footer>
 
-<script src="script.js?v=137"></script>
+<script src="script.js?v=140"></script>
 </body>
 </html>
