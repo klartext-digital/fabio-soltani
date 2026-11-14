@@ -30,7 +30,7 @@
 <link rel="preload" as="font" type="font/woff" href="assets/fonts/GoshaSans-Bold.woff" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="styles.css?v=181">
+<link rel="stylesheet" href="styles.css?v=182">
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -78,12 +78,17 @@
     </a>
 
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="#leistungen">Leistungen</a>
+      <div class="nav-dd">
+        <a href="#leistungen" class="nav-dd-top" aria-haspopup="true">Leistungen<svg class="nav-dd-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav-dd-menu" role="menu">
+          <a href="polsterei.html" role="menuitem">Polsterei</a>
+          <a href="designer-moebel.html" role="menuitem">Designermöbel</a>
+          <a href="orientteppiche.html" role="menuitem">Orientteppiche</a>
+          <a href="teppichreinigung-und-teppichreparatur.html" role="menuitem">Teppichreinigung &amp; Reparatur</a>
+        </div>
+      </div>
       <a href="#vergleich">Vorher&nbsp;&amp;&nbsp;Nachher</a>
       <a href="#geschichte">Über uns</a>
-      <a href="#rezensionen">Rezensionen</a>
-      <a href="#ratgeber">Ratgeber</a>
-      <a href="#atelier">Atelier</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
 
@@ -103,11 +108,12 @@
 <div class="mobile-menu" id="mobile-menu" hidden>
   <nav aria-label="Mobile Navigation">
     <a href="#leistungen">Leistungen</a>
+    <a class="mm-sub" href="polsterei.html">Polsterei</a>
+    <a class="mm-sub" href="designer-moebel.html">Designermöbel</a>
+    <a class="mm-sub" href="orientteppiche.html">Orientteppiche</a>
+    <a class="mm-sub" href="teppichreinigung-und-teppichreparatur.html">Teppichreinigung &amp; Reparatur</a>
     <a href="#vergleich">Vorher &amp; Nachher</a>
     <a href="#geschichte">Über uns</a>
-    <a href="#rezensionen">Rezensionen</a>
-    <a href="#ratgeber">Ratgeber</a>
-    <a href="#atelier">Atelier · Teppichverkauf</a>
     <a href="#kontakt">Kontakt</a>
     <a class="btn btn-gold" href="#termin">Termin vereinbaren</a>
     <a class="mobile-call" href="tel:+41443821769">Oder anrufen: +41&nbsp;44&nbsp;382&nbsp;17&nbsp;69</a>
@@ -236,29 +242,8 @@
         <p class="svc-kicker"><span class="svc-num">03</span>
           <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="11" y="11" width="26" height="26" rx="1"/><path d="M11 18h26M11 25h26M11 32h26M18 11v26M25 11v26M32 11v26"/></svg>
         </p>
-        <h3 class="svc-title">Teppichreparatur</h3>
-        <p class="svc-text">Traditionelle Reparaturen von Hand –<br>für den Erhalt wertvoller Stücke.</p>
-        <span class="svc-more">Mehr erfahren
-          <svg viewBox="0 0 24 24" class="ico-arrow" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        <span class="svc-bar" aria-hidden="true"><i></i></span>
-      </div>
-    </a>
-
-    <a class="svc-card reveal" href="teppichreinigung-und-teppichreparatur.html" data-clip="https://d2ol7oe51mr4n9.cloudfront.net/user_3GmVWMu8qfChuhpbZAAwbcBzJN9/7356c1a8-be42-4bc3-9310-7d92b29665ce.mp4">
-      <div class="svc-media">
-        <img src="assets/img/work-reinigung.jpg" alt="Teppich wird mit Bürste und Schaum gereinigt" loading="lazy" decoding="async">
-        <span class="svc-scrim" aria-hidden="true"></span>
-      </div>
-      <div class="svc-preview" aria-hidden="true">
-        <span class="svc-pv-label">Vorschau</span>
-        <span class="svc-pv-time">0:00</span>
-      </div>
-      <div class="svc-body">
-        <p class="svc-kicker"><span class="svc-num">04</span>
-          <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M16 10h18l-2 26H18z"/><path d="M16 10c-3.3 0-6 2.7-6 6v18c0 1.1.9 2 2 2h6"/><path d="M22 17h6M21 23h8M22 29h6"/></svg>
-        </p>
-        <h3 class="svc-title">Teppichreinigung</h3>
-        <p class="svc-text">Schonende Tiefenreinigung für strahlende<br>Frische und langanhaltende Schönheit.</p>
+        <h3 class="svc-title">Teppichreinigung &amp; Reparatur</h3>
+        <p class="svc-text">Schonende Tiefenreinigung und Reparatur von<br>Hand, für Werterhalt und strahlende Frische.</p>
         <span class="svc-more">Mehr erfahren
           <svg viewBox="0 0 24 24" class="ico-arrow" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         <span class="svc-bar" aria-hidden="true"><i></i></span>
@@ -597,6 +582,15 @@
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 6"/></svg> Inkl. Abholung &amp; Lieferung</li>
       </ul>
 
+      <div class="booking-locations">
+        <span class="bl-title">Unsere Standorte</span>
+        <ul>
+          <li><strong>Wädenswil</strong><span>Atelier · nach Vereinbarung</span></li>
+          <li><strong>Zürich</strong><span>Neuer Standort im Aufbau</span></li>
+          <li><strong>Zug</strong><span>nach Vereinbarung</span></li>
+        </ul>
+      </div>
+
       <div class="booking-call">
         <span>Lieber direkt?</span>
         <a class="call-link" href="tel:+41443821769">
@@ -785,6 +779,8 @@
       <a href="tel:+41443821769">+41&nbsp;44&nbsp;382&nbsp;17&nbsp;69</a>
       <span>Mo–Fr · 08:00–18:00 Uhr</span>
       <span>Atelier Wädenswil · nach Vereinbarung</span>
+      <span>Zürich · neuer Standort im Aufbau</span>
+      <span>Zug · nach Vereinbarung</span>
       <a class="btn btn-gold btn-sm" href="#termin">Termin vereinbaren</a>
     </div>
   </div>
@@ -809,6 +805,6 @@
   <a class="btn btn-gold" href="#termin">Termin</a>
 </div>
 
-<script src="script.js?v=139"></script>
+<script src="script.js?v=140"></script>
 </body>
 </html>
