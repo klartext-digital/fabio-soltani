@@ -1009,17 +1009,22 @@ html.js .reveal.in{opacity:1;transform:none}
 .legal-foot{margin-top:3rem;padding-top:1.4rem;border-top:1px solid var(--cream-line);font-family:var(--font-t);font-size:.86rem;color:var(--on-cream-mut)}
 .legal-foot a{color:var(--gold-ink);text-decoration:underline;text-underline-offset:2px}
 
-/* === Leistungen-Dropdown (Desktop-Nav) === */
+/* === Nav-Bar mittig oben === */
+.header-inner{position:relative}
+.main-nav{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0;margin-right:0}
+@media (min-width:1141px){.main-nav{gap:2.3rem}.main-nav a{font-size:.83rem}}
+
+/* === Leistungen-Dropdown (milchiges Glas) === */
 .nav-dd{position:relative;display:inline-flex;align-items:center}
-.nav-dd-top{display:inline-flex;align-items:center;gap:.36em}
-.nav-dd-caret{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;opacity:.9;transition:transform .3s var(--ease)}
+.nav-dd-top{display:inline-flex;align-items:center;gap:.42em}
+.nav-dd-caret{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;opacity:.9;transition:transform .3s var(--ease)}
 .nav-dd:hover .nav-dd-caret,.nav-dd:focus-within .nav-dd-caret{transform:rotate(180deg)}
-.nav-dd::after{content:"";position:absolute;top:100%;left:-6px;right:-6px;height:16px}
-.nav-dd-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%) translateY(8px);min-width:252px;padding:.5rem;background:rgba(20,16,11,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(199,162,78,.28);border-radius:var(--r-lg);box-shadow:0 26px 60px -24px rgba(0,0,0,.72);display:flex;flex-direction:column;gap:2px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .28s var(--ease),transform .28s var(--ease);z-index:120}
+.nav-dd::after{content:"";position:absolute;top:100%;left:-12px;right:-12px;height:22px}
+.nav-dd-menu{position:absolute;top:calc(100% + 16px);left:50%;transform:translateX(-50%) translateY(10px);min-width:292px;padding:.6rem;background:rgba(240,235,227,.66);backdrop-filter:blur(28px) saturate(1.3);-webkit-backdrop-filter:blur(28px) saturate(1.3);border:1px solid rgba(255,255,255,.55);border-radius:18px;box-shadow:0 36px 80px -28px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.7);display:flex;flex-direction:column;gap:3px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .3s var(--ease),transform .3s var(--ease);z-index:120}
 .nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}
-.nav-dd-menu a{display:block;padding:.62rem .9rem;font-family:var(--font-t);font-size:.9rem;font-weight:500;letter-spacing:.01em;text-transform:none;color:var(--on-dark);opacity:.85;border-radius:10px;white-space:nowrap;transition:background .25s,color .25s,opacity .25s}
+.nav-dd-menu a{display:block;text-align:center;padding:.86rem 1.1rem;font-family:var(--font-d);font-size:.86rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);opacity:.92;border-radius:12px;white-space:nowrap;transition:background .25s,color .25s,opacity .25s}
 .nav-dd-menu a::after{display:none}
-.nav-dd-menu a:hover{background:rgba(199,162,78,.14);color:var(--gold-2);opacity:1}
+.nav-dd-menu a:hover{background:rgba(255,255,255,.5);color:var(--gold-ink);opacity:1}
 
 /* Mobile-Menue: Leistungs-Unterpunkte */
 .mobile-menu a.mm-sub{font-size:1.12rem;letter-spacing:.02em;text-transform:none;opacity:.78;padding:.4rem 0 .4rem 1.1rem;border-bottom:1px solid rgba(255,255,255,.05)}
