@@ -108,8 +108,7 @@
 .hp-card{margin:0}
 .hp-media{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/3;background:var(--ink-3);isolation:isolate;cursor:pointer}
 .hp-media video,.hp-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.hp-media video{z-index:1;opacity:0;transition:opacity .45s var(--ease)}
-.hp-media.playing video{opacity:1}
+.hp-media video{z-index:1}
 .hp-media img{transition:transform .6s var(--ease)}
 .hp-media:hover img{transform:scale(1.05)}
 .hp-play{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:rgba(14,11,8,.5);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.32);display:flex;align-items:center;justify-content:center;color:#fff;transition:opacity .3s var(--ease),transform .3s var(--ease);pointer-events:none}
