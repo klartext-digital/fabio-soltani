@@ -1044,6 +1044,9 @@ html.js .reveal.in{opacity:1;transform:none}
 .booking-locations li span{font-size:.9rem;color:var(--on-dark-mut)}
 @media(min-width:520px){.booking-locations ul{grid-template-columns:repeat(3,1fr);gap:1.1rem}}
 
+/* Standorte integriert in Kontakt-Sektion */
+.locations-in{margin-top:clamp(2.6rem,5vw,4rem);padding-top:clamp(2.6rem,5vw,4rem);border-top:1px solid rgba(199,162,78,.22)}
+.locations-in h2{font-size:clamp(1.7rem,3.2vw,2.4rem)}
 /* ===== Standorte ===== */
 .loc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2vw,1.6rem);margin-top:clamp(2rem,4vw,3rem)}
 .loc-card{background:rgba(255,255,255,.035);border:1px solid rgba(199,162,78,.28);border-radius:var(--r-lg);padding:clamp(1.6rem,2.6vw,2.2rem);display:flex;flex-direction:column;gap:.55rem;transition:border-color .35s var(--ease),background .35s var(--ease)}
