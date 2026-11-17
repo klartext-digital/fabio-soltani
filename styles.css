@@ -188,7 +188,7 @@ a:focus-visible,button:focus-visible,.btn:focus-visible,.nav-toggle:focus-visibl
   body.menu-open .mobile-bar{transform:translateY(115%)}
   .mobile-bar .btn{--bh:50px;width:100%;font-size:.76rem;padding:0 .8em}
   /* Platz schaffen, damit die feste Leiste die Rechtslinks nicht verdeckt */
-  .footer .footer-bottom{padding-bottom:calc(28px + 76px + env(safe-area-inset-bottom))}
+  .footer .footer-bottom{padding-bottom:calc(28px + 76px + 52px + env(safe-area-inset-bottom))}
 }
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
   .mobile-bar{background:rgba(14,11,8,.97)}
