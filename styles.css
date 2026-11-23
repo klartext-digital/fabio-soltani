@@ -188,7 +188,7 @@ a:focus-visible,button:focus-visible,.btn:focus-visible,.nav-toggle:focus-visibl
   body.menu-open .mobile-bar{transform:translateY(115%)}
   .mobile-bar .btn{--bh:50px;width:100%;font-size:.76rem;padding:0 .8em}
   /* Platz schaffen, damit die feste Leiste die Rechtslinks nicht verdeckt */
-  .footer .footer-bottom{padding-bottom:calc(28px + 76px + 52px + env(safe-area-inset-bottom))}
+  .footer .footer-bottom{padding-bottom:calc(28px + 76px + env(safe-area-inset-bottom))}
 }
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
   .mobile-bar{background:rgba(14,11,8,.97)}
@@ -843,6 +843,15 @@ img.rv-ava{background:none;box-shadow:inset 0 0 0 1px rgba(40,28,10,.12)}
 .shop-badge-eb{font-family:var(--font-d);font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-2)}
 .shop-badge strong{font-family:var(--font-d);font-size:1.3rem;line-height:1;letter-spacing:.01em}
 .shop-badge-sub{font-family:var(--font-t);font-size:.72rem;color:var(--on-dark-mut)}
+/* Möbel nach Mass: Atelier-Raster auf heller Fläche */
+.shop-light{overflow:hidden}
+.shop-light .shop-copy .eyebrow{color:var(--gold-ink)}
+.shop-light .shop-copy .heading{color:var(--on-cream);margin-bottom:1.4rem;margin-left:-.055em;text-align:left}
+.shop-light .shop-copy .section-intro{color:var(--on-cream-mut)}
+.shop-light .shop-specs li{border-top-color:rgba(33,27,19,.16)}
+.shop-light .shop-specs h4{color:var(--on-cream)}
+.shop-light .shop-specs p{color:var(--on-cream-mut)}
+.shop-light .shop-copy .btn{margin-top:.2rem}
 .shop-visit-bar{max-width:1120px;margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:1.4rem 2.5rem;flex-wrap:wrap;margin-top:clamp(2.4rem,4.5vw,3.6rem);padding:clamp(1.3rem,2.4vw,1.9rem) clamp(1.4rem,2.6vw,2.2rem);background:rgba(199,162,78,.06);border:1px solid rgba(199,162,78,.24);border-radius:var(--r-lg);text-align:left}
 .sv-loc h3{font-family:var(--font-d);font-weight:800;font-size:clamp(1.12rem,1.9vw,1.45rem);line-height:1.12;letter-spacing:.01em;text-transform:uppercase;color:var(--on-dark);margin:0 0 .4rem;text-wrap:balance}
 .sv-loc p{margin:0;font-family:var(--font-t);font-size:.97rem;line-height:1.5;color:var(--on-dark-mut);max-width:54ch}
