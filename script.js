@@ -6,7 +6,7 @@
 
   /* === CONFIG — bei Bedarf anpassen ============================ */
   var BOOKING_PHONE = '+41 44 382 17 69';
-  var BOOKING_EMAIL = 'info@fabiosoltani.ch';   // TODO: echte Empfangsadresse bestätigen
+  var BOOKING_EMAIL = 'office@fabiosoltani.ch';   // bestätigt 23.11.2026
   var OPEN_HOUR = 8, CLOSE_HOUR = 18;           // Mo–Fr 08–18 Uhr
   var WORKDAYS = [1, 2, 3, 4, 5];               // Mo–Fr (0=So)
   // Optional: echte Atelier-Videos. Pfad eintragen, sobald Footage vorhanden ist –
